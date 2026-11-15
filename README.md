@@ -4,12 +4,6 @@
 
 Vebfare is a venture foundry built for everyday innovators who have high-conviction breakthrough ideas but cannot pursue them due to financial barriers, lack of technical execution skills, or no understanding of market sizing and corporate structuring.
 
-Instead of generic courses or predatory 40% equity grabs, Vebfare operates on a **Fair-Foundry Model**:
-1. **IP Shield & Blind Review**: SHA-256 cryptographic timestamping to seal priority of invention under mutual NDA.
-2. **Non-Dilutive Micro-Grants ($15,000 – $50,000)**: Milestone-based discovery checks with zero debt and zero collateral.
-3. **The Guild Co-Builder Engine**: Fractional CTOs, hardware engineers, and regulatory specialists embedded to build production-grade MVPs in 4–8 week sprints.
-4. **Majority Founder Ownership**: Founders retain 94%+ equity; capped 4%–6% foundry warrants only upon commercial pilot contract execution.
-
 ---
 
 ## 📁 Repository Structure
@@ -50,50 +44,6 @@ Vebfare/
     └── package.json
 ```
 
----
-
-## 🚀 Quick Start Guide
-
-### Prerequisites
-- Node.js (v18+)
-- npm (v9+)
-
-### Option 1: Development Mode (Hot Reloading)
-
-1. **Start the Backend API Server**:
-   ```powershell
-   cd backend
-   npm run start
-   ```
-   *The backend will run on `http://localhost:5000`.*
-
-2. **Start the Frontend Vite Dev Server (in another terminal)**:
-   ```powershell
-   cd frontend
-   npm run dev
-   ```
-   *The frontend will run on `http://localhost:5173` with automated API proxying.*
-
----
-
-### Option 2: Unified Production Mode (Single Command)
-
-The backend is configured to automatically serve the optimized frontend build from `frontend/dist`:
-
-1. Build the frontend:
-   ```powershell
-   cd frontend
-   npm run build
-   ```
-2. Start the unified server:
-   ```powershell
-   cd ../backend
-   npm run start
-   ```
-3. Open `http://localhost:5000` in your browser. Both the complete website and the REST API will be served seamlessly from port 5000!
-
----
-
 ## 📡 REST API Reference
 
 | Endpoint | Method | Description |
@@ -109,9 +59,3 @@ The backend is configured to automatically serve the optimized frontend build fr
 | `/api/newsletter` | `POST` | Subscribe to cohort openings and grant drops |
 
 ---
-
-## 🛡️ Built-in Demo Data
-
-You can immediately test the **Application Tracker** in the UI with these sample tracking codes:
-- **`VEB-2026-8841`**: *DoseGuard AI Pill Dispenser* (Community Pharmacist, Stage: In Committee Review)
-- **`VEB-2026-9104`**: *MicroLab Pocket Spectrometer* (High School Teacher, Stage: Feasibility Sprint Active)
