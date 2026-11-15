@@ -1,0 +1,165 @@
+[
+  {
+    "id": "medroute",
+    "name": "MedRoute SafeChain",
+    "tagline": "Decentralized cold-chain sensor & dispatch for last-mile rural medicine",
+    "category": "HealthTech",
+    "founder": {
+      "name": "Elena Rostova",
+      "priorRole": "Rural ICU Head Nurse (Montana)",
+      "avatar": "https://images.unsplash.com/photo-1594824813598-f94d93d1469e?auto=format&fit=crop&w=300&q=80",
+      "story": "Elena saw $180,000 worth of pediatric vaccines and insulin vials spoil because regional courier vans lacked continuous temperature logging. With zero coding background and $3,000 in personal savings, she couldn't hire engineers."
+    },
+    "blocker": "Financial & Technical Execution",
+    "blockerDetails": "Lacked capital for IoT hardware prototyping and had no access to embedded firmware engineers.",
+    "vebfareSupport": [
+      "$35,000 non-dilutive feasibility grant",
+      "Paired with a fractional IoT Lead from our Guild",
+      "Completed FCC hardware compliance and cold-chain certification",
+      "Facilitated pilot agreement with 3 regional health networks"
+    ],
+    "stage": "Revenue Generating",
+    "fundingSecured": "$420,000 Seed",
+    "impactMetrics": {
+      "dosesSaved": "14,200+",
+      "clinicsServed": 38,
+      "uptime": "99.94%"
+    },
+    "featured": true
+  },
+  {
+    "id": "agripulse",
+    "name": "AgriPulse Acoustic Probe",
+    "tagline": "Ultra-low-cost acoustic sensors detecting soil cavitation for smallholder farms",
+    "category": "AgriTech & Climate",
+    "founder": {
+      "name": "Tariq Al-Mansoor",
+      "priorRole": "Generational Date-Palm Farmer & Agronomist",
+      "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=300&q=80",
+      "story": "Tariq understood soil mechanics better than Silicon Valley labs, but traditional soil probes cost $1,200 per acre. He invented an acoustic resonance method using 3D-printable materials costing under $18."
+    },
+    "blocker": "Market Understanding & Patent Protection",
+    "blockerDetails": "Fear of idea theft prevented him from approaching investors, and he didn't know how to license or manufacture at scale.",
+    "vebfareSupport": [
+      "Filed provisional patents through Vebfare's Legal Shield",
+      "Synthesized business model from hardware sales to low-cost data subscription",
+      "Connected to 14 agricultural co-operatives across semi-arid regions"
+    ],
+    "stage": "Pilot Deployment",
+    "fundingSecured": "$95,000 Foundry Grant",
+    "impactMetrics": {
+      "waterSaved": "32%",
+      "activeProbes": 640,
+      "acreageMonitored": "4,100 Acres"
+    },
+    "featured": true
+  },
+  {
+    "id": "civicpay",
+    "name": "CivicPay Escrow",
+    "tagline": "Automated milestone escrow release for municipal subcontractors & tradespeople",
+    "category": "FinTech / GovTech",
+    "founder": {
+      "name": "Marcus Vance",
+      "priorRole": "Independent Electrical Contractor (18 yrs experience)",
+      "avatar": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=300&q=80",
+      "story": "Marcus nearly went bankrupt twice due to 120-day payment holds from city public-works general contractors. He had an airtight conceptual escrow blueprint but was told by software agencies it would cost $150k just to build an MVP."
+    },
+    "blocker": "No Technical Co-founder & High Software Agency Quotes",
+    "blockerDetails": "Agencies quoted $150k+ upfront, which was impossible for a working tradesperson.",
+    "vebfareSupport": [
+      "Vebfare Guild engineers built the smart milestone inspection & automated ACH release portal in 6 weeks",
+      "Architected compliance framework for state prompt-payment laws",
+      "Launched pilot across 3 county infrastructure projects"
+    ],
+    "stage": "Growth Sprint",
+    "fundingSecured": "$280,000 Syndicate Round",
+    "impactMetrics": {
+      "contractorPmtDays": "Cut from 118 days to 4 days",
+      "volumeProcessed": "$2.4M",
+      "tradePartners": 142
+    },
+    "featured": true
+  },
+  {
+    "id": "kiteweave",
+    "name": "KiteWeave Bio-Composites",
+    "tagline": "Circular bio-textile composites made from discarded agricultural stalk fibers",
+    "category": "CleanTech / Materials",
+    "founder": {
+      "name": "Priya Patel",
+      "priorRole": "Textile Quality Inspector & Chemist",
+      "avatar": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=300&q=80",
+      "story": "Priya discovered a natural enzyme bath that turns leftover hemp and banana stalks into high-tensile waterproof yarn. She lacked ASTM lab certification funds and commercial retail relationships."
+    },
+    "blocker": "Capital for Lab Certification & Commercial Positioning",
+    "blockerDetails": "Laboratory stress-testing and chemical certification required $40k that conventional banks refused to lend without revenue.",
+    "vebfareSupport": [
+      "Sponsored independent laboratory tensile & biodegradation certification",
+      "Structured commercial sample kits sent to 20 sustainable outdoor apparel brands",
+      "Letter of Intent (LOI) secured from 2 European performance wear labels"
+    ],
+    "stage": "Commercial Sampling",
+    "fundingSecured": "$60,000 Foundry Grant",
+    "impactMetrics": {
+      "wasteDiverted": "18.4 Tons",
+      "activeLOIs": 2,
+      "tensileStrength": "1.8x Standard Nylon"
+    },
+    "featured": false
+  },
+  {
+    "id": "neuronudge",
+    "name": "NeuroNudge Haptic Stylus",
+    "tagline": "Active sensory haptic stylus for neuro-motor stroke and tremor rehabilitation",
+    "category": "MedTech",
+    "founder": {
+      "name": "Devon Miller, OTR/L",
+      "priorRole": "Pediatric & Geriatric Occupational Therapist",
+      "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=300&q=80",
+      "story": "Devon designed an ergonomic pen with opposing micro-vibrations that stabilize muscle tremors in stroke recovery patients. Medical hardware incubators rejected him because he wasn't a venture-backed Stanford engineer."
+    },
+    "blocker": "Institutional Bias & FDA Regulatory Navigation",
+    "blockerDetails": "Traditional VC incubators required academic pedigree or previous venture exits. He lacked regulatory roadmap understanding.",
+    "vebfareSupport": [
+      "Vebfare Medical Device Advisory Board provided 510(k) exempt status roadmap",
+      "Manufactured 50 rapid-prototype functional units for inpatient rehab trial",
+      "Clinical pilot underway with 4 physical therapy centers"
+    ],
+    "stage": "Clinical Validation",
+    "fundingSecured": "$80,000 Micro-Grant & Guild Build",
+    "impactMetrics": {
+      "patientImprovement": "43% tremor damping",
+      "clinicalTrialPatients": 65,
+      "patentsPending": 2
+    },
+    "featured": false
+  },
+  {
+    "id": "foodshift",
+    "name": "FoodShift Dynamic Routing",
+    "tagline": "Zero-waste localized surplus routing from restaurants to community pantries within 60 minutes",
+    "category": "Social Impact / Logistics",
+    "founder": {
+      "name": "Carlos Mendez",
+      "priorRole": "Sous Chef & Kitchen Manager (Chicago)",
+      "avatar": "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=300&q=80",
+      "story": "Carlos threw away hundreds of pounds of pristine, unserved prepared dishes every Friday night because shelters could only accept scheduled dry goods. He envisioned a dynamic volunteer pickup relay."
+    },
+    "blocker": "Food Safety Liability & Logistics Software Knowledge",
+    "blockerDetails": "Terrified of Good Samaritan law ambiguities and didn't know how to build a dynamic SMS dispatch system.",
+    "vebfareSupport": [
+      "Drafted standard Bill Emerson Good Samaritan Act indemnity waivers",
+      "Built frictionless SMS/WhatsApp alert dispatch for local courier volunteers",
+      "Operating across 22 neighborhood restaurants in Chicago"
+    ],
+    "stage": "Regional Scaling",
+    "fundingSecured": "$40,000 Micro-Grant",
+    "impactMetrics": {
+      "mealsRescued": "31,800+",
+      "partnerKitchens": 28,
+      "avgPickupTime": "38 Minutes"
+    },
+    "featured": false
+  }
+]

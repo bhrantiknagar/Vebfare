@@ -1,0 +1,104 @@
+[
+  {
+    "trackingId": "VEB-2026-8841",
+    "createdAt": "2026-11-02T10:30:00.000Z",
+    "updatedAt": "2026-11-14T14:20:00.000Z",
+    "status": "In Committee Review",
+    "statusCode": "committee_review",
+    "currentStageIndex": 3,
+    "founderName": "Sarah Jenkins",
+    "founderEmail": "sarah.j@example.com",
+    "founderRole": "Community Pharmacist (12 yrs)",
+    "ideaTitle": "DoseGuard AI Pill Dispenser for Seniors Living Alone",
+    "category": "HealthTech",
+    "primaryBlocker": "Capital for Industrial Design & Mold Tooling",
+    "estimatedNeed": "$30,000 grant + Guild Hardware Engineer",
+    "problemStatement": "Elderly patients with polypharmacy (5+ daily meds) frequently double-dose or miss medication schedules. Current automatic dispensers jam or cost $800+.",
+    "solutionSummary": "Gravity-fed carousel with optical sensor verification and emergency cellular alert module for care providers under $60 manufacturing cost.",
+    "timeline": [
+      {
+        "stage": "Application Received & IP Shield Sealed",
+        "date": "2026-11-02",
+        "completed": true,
+        "note": "Cryptographic timestamp hash recorded. Mutual non-disclosure agreement in effect."
+      },
+      {
+        "stage": "Domain Expert Blind Screen",
+        "date": "2026-11-06",
+        "completed": true,
+        "note": "Passed clinical practicality audit by Senior Geriatric Consultant."
+      },
+      {
+        "stage": "Feasibility & Market Sizing",
+        "date": "2026-11-10",
+        "completed": true,
+        "note": "Medicare Part B DME reimbursement path identified; billable billing code #E1399."
+      },
+      {
+        "stage": "Investment & Guild Committee Review",
+        "date": "2026-11-14",
+        "completed": false,
+        "current": true,
+        "note": "Scheduled for Thursday Syndicate Pitch. Reviewer: Dr. Aris Thorne & Lead Hardware Partner."
+      },
+      {
+        "stage": "Grant Disbursement & Guild Kickoff",
+        "date": "Pending",
+        "completed": false,
+        "note": "Upon committee approval: $30,000 non-dilutive grant release."
+      }
+    ],
+    "reviewerFeedback": "Exceptional frontline problem clarity. Sarah has verified patient demand through 140 home-visit interviews. Hardware tooling risk is solvable via our Shenzhen tooling partner."
+  },
+  {
+    "trackingId": "VEB-2026-9104",
+    "createdAt": "2026-11-08T09:15:00.000Z",
+    "updatedAt": "2026-11-12T16:45:00.000Z",
+    "status": "Feasibility Sprint Active",
+    "statusCode": "feasibility_active",
+    "currentStageIndex": 2,
+    "founderName": "David Chen",
+    "founderEmail": "david.chen@example.com",
+    "founderRole": "High School Science Teacher",
+    "ideaTitle": "MicroLab: Pocket Spectrometer for High School STEM",
+    "category": "EdTech / Hardware",
+    "primaryBlocker": "Market Understanding & Manufacturing Contacts",
+    "estimatedNeed": "$15,000 prototype micro-grant",
+    "problemStatement": "Standard laboratory spectrometers cost $2,500, pricing out 92% of public high school chemistry labs.",
+    "solutionSummary": "Smartphone-mounted diffraction grating prism paired with optical computer vision calibration software to read chemical emission spectra.",
+    "timeline": [
+      {
+        "stage": "Application Received & IP Shield Sealed",
+        "date": "2026-11-08",
+        "completed": true,
+        "note": "IP timestamp logged. Initial check passed."
+      },
+      {
+        "stage": "Domain Expert Blind Screen",
+        "date": "2026-11-11",
+        "completed": true,
+        "note": "Approved by EdTech curriculum evaluation board."
+      },
+      {
+        "stage": "Feasibility & Market Sizing",
+        "date": "2026-11-12",
+        "completed": false,
+        "current": true,
+        "note": "Currently running school district procurement interview sprint (15 districts)."
+      },
+      {
+        "stage": "Investment & Guild Committee Review",
+        "date": "Pending",
+        "completed": false,
+        "note": "Awaiting completion of district procurement sprint."
+      },
+      {
+        "stage": "Grant Disbursement & Guild Kickoff",
+        "date": "Pending",
+        "completed": false,
+        "note": "Target sprint date: Dec 2026."
+      }
+    ],
+    "reviewerFeedback": "Strong pedagogical value. Next milestone: confirm willingness-to-pay from district science curriculum heads."
+  }
+]

@@ -1,0 +1,26 @@
+[
+  {
+    "id": "m1",
+    "name": "Dr. Aris Thorne",
+    "role": "Former VP of Hardware, Philips Healthcare",
+    "expertise": "MedTech, FDA Regulatory, Tooling",
+    "backedVentures": ["medroute", "neuronudge"],
+    "quote": "The best healthcare ideas don't come from tech conferences—they come from nurses and therapists on the hospital floor who are too busy saving lives to build cap tables. Vebfare bridges that gap."
+  },
+  {
+    "id": "m2",
+    "name": "Maya Lin",
+    "role": "Fractional CTO & Ex-Stripe Principal Architect",
+    "expertise": "FinTech Protocols, API Architecture, Compliance",
+    "backedVentures": ["civicpay"],
+    "quote": "Instead of advising an 18-year-old on how to sell another crypto coin, I spend 5 hours a week helping a veteran contractor build software that feeds working families on time."
+  },
+  {
+    "id": "m3",
+    "name": "Julian Vance",
+    "role": "Partner, Horizon Climate Syndicate",
+    "expertise": "AgriTech, Material Sciences, Carbon Offsets",
+    "backedVentures": ["agripulse", "kiteweave"],
+    "quote": "Traditional VCs miss 95% of real-world innovation because they only look within their existing social graph. Vebfare is the most authentic venture pipeline I have ever invested in."
+  }
+]
