@@ -2,7 +2,11 @@
 
 > **"You have the idea. We help you fund it, build it, and present it."**
 
+<<<<<<< HEAD
 Vebfare is a platform and initiative created for everyday innovators — nurses, teachers, tradespeople, mechanics, store workers, and dreamers — who have great ideas but lack the financial runway, technical skills, or business knowledge to bring them to market.
+=======
+Vebfare is a venture foundry built for everyday innovators who have high-conviction breakthrough ideas but cannot pursue them due to financial barriers, lack of technical execution skills, or no understanding of market sizing and corporate structuring.
+>>>>>>> b5d9503276c76fb088da7b36e57488a39477b2d1
 
 ---
 
@@ -41,6 +45,7 @@ Vebfare/
     └── package.json
 ```
 
+<<<<<<< HEAD
 ---
 
 ## 🚀 How to Run
@@ -73,3 +78,20 @@ You can test the **Status Checker** using existing seeded applications:
 - `VEB-2026-8841` (Elena Rostova - Portable Medicine Cold Box)
 - `VEB-2026-9104` (David Chen - Pocket Spectrometer)
 - Or submit any new idea via the on-page form to generate a brand new live reference code!
+=======
+## 📡 REST API Reference
+
+| Endpoint | Method | Description |
+| :--- | :--- | :--- |
+| `/api/health` | `GET` | Server status and timestamp |
+| `/api/stats` | `GET` | Platform metrics (Capital deployed, ventures active, success rate) |
+| `/api/projects` | `GET` | Filterable list of incubated ventures (`?category=`, `?search=`, `?blocker=`) |
+| `/api/projects/:id` | `GET` | Detailed dossier for a specific venture |
+| `/api/applications` | `POST` | Submit an idea; generates `VEB-2026-XXXX` tracking code & SHA-256 IP hash |
+| `/api/applications/:id` | `GET` | Retrieve live review milestones & reviewer notes for a tracking code |
+| `/api/calculator` | `POST` | Algorithmic idea readiness scoring & customized 60-day action roadmap |
+| `/api/mentors/apply` | `POST` | Onboard fractional CTOs, regulatory leads, and angel syndicates |
+| `/api/newsletter` | `POST` | Subscribe to cohort openings and grant drops |
+
+---
+>>>>>>> b5d9503276c76fb088da7b36e57488a39477b2d1
