@@ -240,6 +240,12 @@ app.post('/api/applications', (req, res) => {
   });
 });
 
+// Get All Applications (For Foundry Committee Review Panel)
+app.get('/api/applications', (req, res) => {
+  const applications = readFile('applications.json');
+  res.json(applications);
+});
+
 // Application Tracker / Founder Lookup
 app.get('/api/applications/:trackingId', (req, res) => {
   const queryId = req.params.trackingId.trim().toUpperCase();
@@ -253,6 +259,48 @@ app.get('/api/applications/:trackingId', (req, res) => {
   }
 
   res.json(found);
+});
+
+// Update Application Status & Milestones (Committee Reviewer Action)
+app.patch('/api/applications/:trackingId/status', (req, res) => {
+  const queryId = req.params.trackingId.trim().toUpperCase();
+  const { stageIndex, reviewerFeedback, newStatus } = req.body;
+  const applications = readFile('applications.json');
+  const appIndex = applications.findIndex(a => a.trackingId.toUpperCase() === queryId);
+
+  if (appIndex === -1) {
+    return res.status(404).json({ error: `Application "${queryId}" not found` });
+  }
+
+  const targetApp = applications[appIndex];
+  if (typeof stageIndex === 'number' && stageIndex >= 0 && stageIndex < targetApp.timeline.length) {
+    targetApp.currentStageIndex = stageIndex;
+    targetApp.timeline.forEach((step, idx) => {
+      if (idx < stageIndex) {
+        step.completed = true;
+        step.current = false;
+      } else if (idx === stageIndex) {
+        step.completed = false;
+        step.current = true;
+      } else {
+        step.completed = false;
+        step.current = false;
+      }
+    });
+  }
+
+  if (newStatus) targetApp.status = newStatus;
+  if (reviewerFeedback) targetApp.reviewerFeedback = reviewerFeedback;
+  targetApp.updatedAt = new Date().toISOString();
+
+  applications[appIndex] = targetApp;
+  writeFile('applications.json', applications);
+
+  res.json({
+    success: true,
+    message: `Application ${queryId} updated successfully`,
+    application: targetApp
+  });
 });
 
 // Interactive Idea Viability & Readiness Calculator

@@ -1,28 +1,17 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
-import ChasmSection from './components/ChasmSection';
-import FoundryModel from './components/FoundryModel';
-import VenturesGallery from './components/VenturesGallery';
-import ReadinessCalculator from './components/ReadinessCalculator';
-import EthicsCharter from './components/EthicsCharter';
-import MentorGuildSection from './components/MentorGuildSection';
+import ObstaclesSection from './components/ObstaclesSection';
+import SupportSection from './components/SupportSection';
+import StoriesSection from './components/StoriesSection';
+import ProcessSection from './components/ProcessSection';
+import SubmitSection from './components/SubmitSection';
+import StatusChecker from './components/StatusChecker';
 import FAQSection from './components/FAQSection';
 import Footer from './components/Footer';
-import SubmitWizard from './components/SubmitWizard';
-import ApplicationTracker from './components/ApplicationTracker';
-import { fetchStats } from './services/api';
 
 export default function App() {
-  const [submitModalOpen, setSubmitModalOpen] = useState(false);
-  const [trackModalOpen, setTrackModalOpen] = useState(false);
-  const [trackCode, setTrackCode] = useState('');
-  const [calculatorData, setCalculatorData] = useState(null);
-  const [stats, setStats] = useState(null);
-
-  useEffect(() => {
-    fetchStats().then(data => setStats(data)).catch(console.error);
-  }, []);
+  const [activeTrackingCode, setActiveTrackingCode] = useState('');
 
   const scrollTo = (id) => {
     const el = document.getElementById(id);
@@ -31,112 +20,44 @@ export default function App() {
     }
   };
 
-  const handleProceedWithScore = (scoreData) => {
-    setCalculatorData(scoreData);
-    setSubmitModalOpen(true);
-  };
-
-  const handleTrackNow = (code) => {
-    setTrackCode(code);
-    setTrackModalOpen(true);
+  const handleApplicationSubmitted = (trackingId) => {
+    setActiveTrackingCode(trackingId);
   };
 
   return (
-    <div className="min-h-screen bg-[#0b0f17] text-slate-100 flex flex-col font-sans selection:bg-amber-500/20 selection:text-amber-300">
-      {/* Sticky Navbar */}
-      <Navbar
-        onOpenSubmit={() => {
-          setCalculatorData(null);
-          setSubmitModalOpen(true);
-        }}
-        onOpenTrack={() => {
-          setTrackCode('');
-          setTrackModalOpen(true);
-        }}
-        onScrollTo={scrollTo}
-      />
+    <div className="min-h-screen bg-slate-50 text-slate-800 flex flex-col font-sans">
+      {/* Clean Navigation */}
+      <Navbar onScrollTo={scrollTo} />
 
-      {/* Hero Section */}
+      {/* Main Content */}
       <main className="flex-1">
-        <Hero
-          onOpenSubmit={() => {
-            setCalculatorData(null);
-            setSubmitModalOpen(true);
-          }}
-          onScrollTo={scrollTo}
-          stats={stats}
-        />
+        {/* Hero */}
+        <Hero onScrollTo={scrollTo} />
 
-        {/* The 3 Chasms We Bridge */}
-        <ChasmSection
-          onOpenSubmit={() => {
-            setCalculatorData(null);
-            setSubmitModalOpen(true);
-          }}
-        />
+        {/* Why ideas stay stuck: financial, market, technical */}
+        <ObstaclesSection />
 
-        {/* How It Works (The 4-Stage Foundry) */}
-        <FoundryModel
-          onOpenSubmit={() => {
-            setCalculatorData(null);
-            setSubmitModalOpen(true);
-          }}
-        />
+        {/* How we actually support you */}
+        <SupportSection onScrollTo={scrollTo} />
 
-        {/* Ideas in Flight (Ventures Portfolio) */}
-        <VenturesGallery
-          onOpenSubmit={() => {
-            setCalculatorData(null);
-            setSubmitModalOpen(true);
-          }}
-        />
+        {/* Real stories from everyday people */}
+        <StoriesSection onScrollTo={scrollTo} />
 
-        {/* Interactive Readiness & Viability Calculator */}
-        <ReadinessCalculator
-          onProceedWithScore={handleProceedWithScore}
-        />
+        {/* The 4-step process */}
+        <ProcessSection />
 
-        {/* Founder Rights & Ethics Charter */}
-        <EthicsCharter />
+        {/* Direct on-page idea submission form */}
+        <SubmitSection onApplicationSubmitted={handleApplicationSubmitted} />
 
-        {/* The Guild: Co-Builders & Angel Syndicates */}
-        <MentorGuildSection />
+        {/* Status Tracker */}
+        <StatusChecker initialCode={activeTrackingCode} />
 
         {/* Frequently Asked Questions */}
-        <FAQSection
-          onOpenSubmit={() => {
-            setCalculatorData(null);
-            setSubmitModalOpen(true);
-          }}
-        />
+        <FAQSection onScrollTo={scrollTo} />
       </main>
 
       {/* Footer */}
-      <Footer
-        onOpenSubmit={() => {
-          setCalculatorData(null);
-          setSubmitModalOpen(true);
-        }}
-        onOpenTrack={() => {
-          setTrackCode('');
-          setTrackModalOpen(true);
-        }}
-        onScrollTo={scrollTo}
-      />
-
-      {/* Modals */}
-      <SubmitWizard
-        isOpen={submitModalOpen}
-        onClose={() => setSubmitModalOpen(false)}
-        initialData={calculatorData}
-        onTrackNow={handleTrackNow}
-      />
-
-      <ApplicationTracker
-        isOpen={trackModalOpen}
-        onClose={() => setTrackModalOpen(false)}
-        initialCode={trackCode}
-      />
+      <Footer onScrollTo={scrollTo} />
     </div>
   );
 }

@@ -89,6 +89,33 @@ export async function trackApplication(trackingId) {
   }
 }
 
+export async function fetchAllApplications() {
+  try {
+    const res = await fetch(`${API_BASE}/applications`);
+    if (!res.ok) throw new Error('Failed to fetch applications');
+    return await res.json();
+  } catch (err) {
+    console.warn('Error fetching all applications:', err);
+    return [];
+  }
+}
+
+export async function updateApplicationStatus(trackingId, updateData) {
+  try {
+    const cleanId = encodeURIComponent(trackingId.trim());
+    const res = await fetch(`${API_BASE}/applications/${cleanId}/status`, {
+      method: 'PATCH',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(updateData)
+    });
+    const data = await res.json();
+    if (!res.ok) throw new Error(data.error || 'Failed to update application');
+    return data;
+  } catch (err) {
+    throw err;
+  }
+}
+
 export async function calculateReadiness(calcData) {
   try {
     const res = await fetch(`${API_BASE}/calculator`, {
