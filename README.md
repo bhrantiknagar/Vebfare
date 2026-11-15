@@ -2,9 +2,8 @@
 
 > **"You have the idea. We help you fund it, build it, and present it."**
 
-<<<<<<< HEAD
 Vebfare is a platform and initiative created for everyday innovators — nurses, teachers, tradespeople, mechanics, store workers, and dreamers — who have great ideas but lack the financial runway, technical skills, or business knowledge to bring them to market.
-=======
+
 Vebfare is a venture foundry built for everyday innovators who have high-conviction breakthrough ideas but cannot pursue them due to financial barriers, lack of technical execution skills, or no understanding of market sizing and corporate structuring.
 ---
 
