@@ -1,5 +1,5 @@
 # Vebfare — Supporting Unrepresented Ideas
-
+ 
 > **"You have the idea. We help you fund it, build it, and present it."**
 
 Vebfare is a platform and initiative created for everyday innovators — nurses, teachers, tradespeople, mechanics, store workers, and dreamers — who have great ideas but lack the financial runway, technical skills, or business knowledge to bring them to market.
